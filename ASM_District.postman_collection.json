@@ -1,0 +1,243 @@
+{
+	"info": {
+		"_postman_id": "cbb7e12e-c5c7-402a-832c-689b73415219",
+		"name": "ASM_District",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All District",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/districts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"districts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create District",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 1,\r\n        \"districtName\": \"Ba Đình\",\r\n        \"createdAt\": \"2021-06-03T19:13:41.000+0000\",\r\n        \"createdBy\": \"Administrator\",\r\n        \"updatedAt\": \"2021-06-03T19:13:41.000+0000\",\r\n        \"updatedBy\": \"Administrator\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/districts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"districts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update District",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/districts/{districtId}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"districts",
+						"{districtId}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete District",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/districts/{districtId}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"districts",
+						"{districtId}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find District By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/districts/{districtId}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"districts",
+						"{districtId}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Street",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/streets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"streets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Street",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 6,\r\n        \"streetName\": \"Hoàng Hoa Thám\",\r\n        \"district\": {\r\n            \"id\": 1,\r\n            \"districtName\": \"Ba Đình\",\r\n            \"createdAt\": \"2021-06-03T19:13:41.000+0000\",\r\n            \"createdBy\": \"Administrator\",\r\n            \"updatedAt\": \"2021-06-03T19:13:41.000+0000\",\r\n            \"updatedBy\": \"Administrator\"\r\n        }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/streets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"streets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Street",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/streets/{streetId}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"streets",
+						"{streetId}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Street",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/streets/{streetId}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"streets",
+						"{streetId}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Street By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/streets/{streetId}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"streets",
+						"{streetId}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
